@@ -1,2 +1,31 @@
 Obter todos os nodes 
     kubectl get nodes
+
+Aplicar um pod que foi criado de forma declarativa
+    kubectl apply -f .\primeiro.yaml
+
+
+Para deletar o pod linha de comando
+    kubectl delete pod container-pod-1
+
+Para deletar o pod quando for um arquivo
+    kubectl delete -f .\primeiro.yaml 
+
+Obter detalhes do pod
+    kubectl describe pod container-pod-1
+
+
+Verificar execução dos pods
+    kubectl get pods --watch
+
+
+-----------------------------------------------------
+Comandos para tipo serviço
+
+    kubectl get svc
+
+
+kubectl apply -f .\svc-pod-2.yaml
+
+
+
