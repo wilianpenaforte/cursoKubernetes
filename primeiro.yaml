@@ -1,0 +1,10 @@
+# primeiro pods é onde os containers são executados.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: container-pod-1
+spec:
+  containers:
+    - name: container-pod-1
+      image: nginx:latest

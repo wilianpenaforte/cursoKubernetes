@@ -1,0 +1,2 @@
+Obter todos os nodes 
+    kubectl get nodes
