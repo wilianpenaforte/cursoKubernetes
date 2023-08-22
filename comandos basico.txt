@@ -28,4 +28,5 @@ Comandos para tipo serviço
 kubectl apply -f .\svc-pod-2.yaml
 
 
-
+Deletar servicos
+	kubectl delete services svc-pod-1-loadbalancer
