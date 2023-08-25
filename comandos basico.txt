@@ -33,11 +33,22 @@ Deletar servicos
 
 
 
-
-
 Deletar todos os pods
 	kubectl delete pods --all
 	
 	
 Deletar todos os serviços
 	kubectl delete svc --all
+
+
+------------------------------------ Deployment -------------------------------
+
+Historico de alteração do DeployMent
+    kubectl rollout history deployment portal-noticias-deployment
+
+Criando anotação 
+    kubectl annotate deployment portal-noticias-deployment kubernete.io/change-cause="Criando portal de noticias na versão 1"
+
+------------------------------------ Volumes ---------------------------------
+
+kubectl exec -it pod-volume --container nginx-container -- bash
